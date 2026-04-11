@@ -1,0 +1,10 @@
+services:
+  sandbox:
+    build: .
+    container_name: reverb-sandbox
+    volumes:
+      - .:/workspace
+    stdin_open: true
+    tty: true
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
