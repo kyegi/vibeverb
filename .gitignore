@@ -1,3 +1,5 @@
-JuceReverb/
 .claude/
 .tmux.conf
+JUCE/
+build/
+build-win/
