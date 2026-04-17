@@ -9,9 +9,22 @@ RUN apt-get update && apt-get install -y \
     git \
     vim \
     ca-certificates \
-    # Cross-compilation toolchain for Windows
     mingw-w64 \
-    && rm -rf /var/lib/apt/lists/*
+    pkg-config \
+    libasound2-dev \
+    libjack-jackd2-dev \
+    libcurl4-openssl-dev \
+    libfreetype-dev \
+    libfontconfig1-dev \
+    libx11-dev \
+    libxcomposite-dev \
+    libxcursor-dev \
+    libxext-dev \
+    libxinerama-dev \
+    libxrandr-dev \
+    libxrender-dev \
+    libglu1-mesa-dev \
+    mesa-common-dev
 
 # Install Node.js (required for Claude Code)
 RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
